@@ -1,9 +1,9 @@
 import datetime
 from random import sample
 from ctypes import CDLL, c_int
-from heap_sort import heap_sort
+from py_sort.heap_sort import heap_sort
 
-so_file = './sort/heap_sort.so'
+so_file = './c_sort/heap_sort.so'
 heap_sort_c = CDLL(so_file)
 arr = sample(range(20_000_000), k=10_000)
 arrc = arr[:]

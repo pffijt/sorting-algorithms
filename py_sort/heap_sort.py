@@ -4,7 +4,6 @@
     Complexity: Θ(n log n)
 '''
 
-arr = [2,5,8,1,3,4,99,1099, 123]
 heap_size = 0
 
 def parent(i):
